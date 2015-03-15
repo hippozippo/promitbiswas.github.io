@@ -1,0 +1,372 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,100,400,300,200);
+@font-face {
+    font-family: 'Quilt';
+    src: url('../font/QuidProQuo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'neue';
+    src: url('../font/neue_droschke.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#back {
+    z-index: 10;
+    background-image: url("../imgs/back_g.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#container {
+    position: relative;
+    z-index: 100;
+}
+
+#container #header {
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150vh;
+    text-align: center;
+		font-size:0.8em
+}
+
+#container #header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+#container #header #title {
+    padding-top: 25px;
+    position: relative;
+}
+
+#container #header #title #nitd-logo {
+    display: inline-block;
+    width: 128px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin-left: 52px;
+    margin-top: 9px;
+}
+
+#container #header #title #nitd-logo img {
+    max-width: 100%;
+}
+
+#container #header #title h1 {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    /*color: #5882FA;*/
+	color:#FE2E2E;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#container #header #title h2 {
+    display: inline-block;
+    font-family: 'neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.4em;
+    font-size: 6em;
+    color: #FBF5EF;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#container #header #title #mun-logo {
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    margin-right: 20px;
+}
+
+#container #header #title #mun-logo img {
+    max-width: 100%;
+}
+
+
+#container #header .para {
+    margin: 50px 0px 0px 0px;
+    text-align: justify;
+    display: inline-block;
+    width: 75%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.5 em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    line-height: 2.5em;
+    position: relative;
+}
+
+#container #content .activites {
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    color: white;
+    padding: 50px 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#container #content .activites:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+#container #content .activites ul {
+    list-style: none;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#container #content .activites ul li {
+    height: 150px;
+    width: 50%;
+    float: left;
+    display: table;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#container #content .activites ul li p {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    -webkit-transition: background 0.3s linear,color 0.3s linear;
+            transition: background 0.3s linear,color 0.3s linear;
+}
+
+#container #content .activites ul li p:hover {
+    background: white;
+    color: black;
+}
+
+#container #content .description {
+    z-index: 500;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-family: 'Neue', sans-serif;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+#container #content .description:before {
+    z-index: 500;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(128, 157, 255, 0.3);
+}
+
+#container #content .description h2 {
+    position: relative;
+    padding: 25px 0px 25px 0px;
+    font-size: 3em;
+    letter-spacing: 0.5em;
+    word-spacing: 0.6em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Neue', sans-serif;
+    text-transform: uppercase;
+    color: greenyellow;
+}
+
+#container #content .description p {
+    position: relative;
+    padding: 0px 10% 0px 10%;
+    text-align:justify;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 50px;
+	    font-family: 'Roboto', sans-serif;
+
+}
+
+#container #content .description p:nth-child(2) {
+    font-weight: 400;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+#container #content .description .em {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #009dff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	text-align:center;
+}
+
+
+#container #footer {
+    background: darkgrey;
+    position: relative;
+    width: 100%;
+    display: table;
+}
+
+#container #footer > div {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+
+#container #footer > div .social {
+	z-index:1000;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+#container #footer >div .social ul {
+    list-style:none;
+    position: absolute;
+    top: 40%;
+    
+	position:fixed;
+}
+
+#container #footer > div .social li {
+    float: left;
+    margin: 0px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: border 0.3s;
+    border: 0px solid white;
+}
+#container #footer > div .social li:hover  {
+    border: 5px solid white;
+}
+
+#container #footer > div .social img {
+    width: 100%;
+    height: 100%;
+}
+#container #footer > div .contacts  {
+    height:50vh;
+	
+}
+
+
+#container #footer > div .contacts .list {
+    color: darkslategrey;
+    display: inline-block;
+    margin: 10px 25px;
+    font-family: Play;
+	padding-right:30px;
+	position:absolute;
+	left:75%;
+	
+}
+#container #footer > div .contacts .team {
+    color: darkslategrey;
+    display: inline-block;
+    margin: 10px 25px;
+    font-family: Play;
+	position:absolute;
+	left:15%;
+
+	
+}
+
+#container #footer > div .contacts .list h5 {
+   
+    font-size: 1.5em;
+    color: white;
+}
+#container #footer > div .contacts .team h5 {
+   
+    font-size: 1.5em;
+    color: white;
+}
+
+#container #footer > div .contacts .list ul {
+  
+    margin: 0px 0px;
+    font-size: 1.2em;
+    list-style: none;
+}
+#container #footer > div .contacts .team ul {
+  
+    margin: 0px 0px;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+#container #footer > div .contacts .list ul li {
+    margin: 5px 0px;
+}
+#container #footer > div .contacts .team ul li {
+    margin: 5px 0px;
+}
+
+#container #footer > div .credits {
+    text-align: center;
+    clear: both;
+    background: #626262;
+    color: darkgrey;
+   
+    font: bold 0.7em 'Neue',sans-serif;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+    position: relative;
+    padding: 10px 0px;
+}
